@@ -1,0 +1,812 @@
+<link rel="icon" href="7mqzen3yq9.jpg" type="image/x-icon"><link rel="icon" href="7mqzen3yq9.jpg" type="image/x-icon"><!DOCTYPE html><html lang="en" data-scrapbook-source="https://c02d1129-af8b-4f91-a965-c733563a24a8--1754388000--d8e3a43c.app.yourware.app/"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftServe Hub - Your One-Stop Hub for Tech, Education &amp; Business Solutions</title>
+    <meta name="description" content="Innovate. Integrate. Inspire. SoftServe Hub provides comprehensive technology, education, and business solutions including AI/ML projects, web development, data analytics, and digital marketing.">
+    <link rel="stylesheet" href="all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #333333;
+            color: white;
+            padding: 0.5rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0.3rem 0;
+            position: relative;
+        }
+        
+
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        .mobile-menu {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #d4af37 0%, #9c7c1d 100%);
+            color: white;
+            padding: 6rem 0 4rem;
+            text-align: center;
+            margin-top: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0) 70%);
+            z-index: 1;
+        }
+        
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            text-align: left;
+        }
+        
+        .hero-text {
+            text-align: left;
+        }
+        
+        .hero-image {
+            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 280px;
+            border-radius: 20px;
+            animation: float 3s ease-in-out infinite, pulse 2s ease-in-out infinite;
+            transform-origin: center;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            }
+            50% {
+                box-shadow: 0 15px 35px rgba(212, 175, 55, 0.3);
+            }
+            100% {
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            }
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .hero .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+
+        .hero .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #333333;
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            border: 2px solid transparent;
+            letter-spacing: 0.5px;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #d4af37;
+            transition: width 0.3s ease;
+            z-index: -1;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            border-color: #d4af37;
+        }
+        
+        .cta-button:hover::before {
+            width: 100%;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 4rem 0;
+            background-color: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #9c7c1d, #d4af37, #9c7c1d);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 3px solid transparent;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #d4af37, #9c7c1d);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-bottom: 3px solid #d4af37;
+        }
+        
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card h3 {
+            color: #d4af37;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .service-card i {
+            font-size: 1.5rem;
+        }
+
+        .service-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .service-list li {
+            padding: 0.3rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .service-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        /* About Section */
+        .about {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            color: #333;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            object-fit: contain;
+            height: 350px;
+            width: 100%;
+            border: 2px solid #d4af37;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 4rem 0;
+            background-color: #f8f9fa;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: linear-gradient(to top, rgba(212, 175, 55, 0.05), transparent);
+            z-index: -1;
+            transition: height 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .project-card:hover::after {
+            height: 100%;
+        }
+
+        .project-card h3 {
+            color: #d4af37;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .project-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .project-link {
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #d4af37 0%, #9c7c1d 100%);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.1rem;
+            padding: 0.8rem 1.2rem;
+            background-color: rgba(0,0,0,0.1);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            background-color: rgba(0,0,0,0.2);
+            transform: translateY(-3px);
+        }
+
+        .contact-item i {
+            font-size: 1.3rem;
+        }
+        
+        .contact-link {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-link:hover {
+            color: rgba(255,255,255,0.8);
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #333333;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+            
+
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .tagline {
+                font-size: 1.2rem;
+            }
+            
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-text {
+                text-align: center;
+            }
+            
+            .hero-image {
+                justify-content: center;
+                margin-top: 2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero {
+                padding: 6rem 0 3rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        /* Scroll Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header style="background: rgb(51, 51, 51); backdrop-filter: none;">
+        <nav class="container">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="mobile-menu" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>SoftServe Hub</h1>
+                    <p class="tagline">Innovate. Integrate. Inspire.</p>
+                    <p class="subtitle">Your One-Stop Hub for Tech, Education &amp; Business Solutions</p>
+                    <a href="#contact" class="cta-button">Get Started Today</a>
+                </div>
+                <div class="hero-image">
+                    <img src="hel5if8mfr.png" alt="SoftServe Hub Logo" class="logo-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title fade-in visible">Our Core Services</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in visible">
+                    <h3><i class="fas fa-laptop-code"></i> Technology &amp; Digital Solutions</h3>
+                    <p>Comprehensive web development and hosting solutions tailored to your business needs.</p>
+                    <ul class="service-list">
+                        <li>Website Development &amp; Hosting</li>
+                        <li>UI/UX Design</li>
+                        <li>AI, ML, and Data Science Projects</li>
+                        <li>Power BI Dashboards &amp; Data Visualization</li>
+                        <li>n8n Workflow Automation</li>
+                    </ul>
+                </div>
+
+                <div class="service-card fade-in visible">
+                    <h3><i class="fas fa-graduation-cap"></i> Educational &amp; Research Support</h3>
+                    <p>Academic excellence through comprehensive research and publication support.</p>
+                    <ul class="service-list">
+                        <li>IEEE Paper Publication Support</li>
+                        <li>UG &amp; PG Final Year Project Guidance</li>
+                        <li>AI/ML Research Projects</li>
+                        <li>Academic Documentation</li>
+                        <li>Research Methodology Support</li>
+                    </ul>
+                </div>
+
+                <div class="service-card fade-in visible">
+                    <h3><i class="fas fa-chart-line"></i> Marketing &amp; Creative Design</h3>
+                    <p>Boost your brand visibility with our comprehensive digital marketing solutions.</p>
+                    <ul class="service-list">
+                        <li>Digital Marketing &amp; SEO</li>
+                        <li>Logo &amp; Brand Identity Design</li>
+                        <li>Video Editing &amp; Production</li>
+                        <li>Social Media Strategy</li>
+                        <li>Content Marketing</li>
+                    </ul>
+                </div>
+
+                <div class="service-card fade-in visible">
+                    <h3><i class="fas fa-cogs"></i> Administrative &amp; Business Support</h3>
+                    <p>Streamline your operations with our efficient business process solutions.</p>
+                    <ul class="service-list">
+                        <li>Data Entry &amp; Management</li>
+                        <li>BPO &amp; Administrative Services</li>
+                        <li>MS Office Suite Expertise</li>
+                        <li>Virtual Assistance</li>
+                        <li>Business Process Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in visible">
+                    <h2>Why Choose SoftServe Hub?</h2>
+                    <p>At SoftServe Hub, we combine cutting-edge technology with innovative solutions to help businesses and individuals achieve their goals. Our team of experts specializes in delivering high-quality services across multiple domains.</p>
+                    <p>From AI-powered applications to comprehensive business solutions, we're committed to excellence and customer satisfaction. Our proven track record in data science, web development, and digital transformation makes us your ideal technology partner.</p>
+                    <p>Join hundreds of satisfied clients who have transformed their businesses with our tailored solutions.</p>
+                </div>
+                <div class="about-image fade-in visible">
+                    <img src="7mqzen3yq9.jpg" alt="SoftServe Hub Team Collaboration" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title fade-in visible">Featured Client Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in visible">
+                    <h3>Spam Classification</h3>
+                    <p>A machine learning project that uses NLP techniques to classify SMS/email messages as spam or not spam using models like Naive Bayes and SVM.</p>
+                    <a href="https://github.com/SoftServeHub/spam-classification" class="project-link" target="_blank">View Project →</a>
+                </div>
+
+                <div class="project-card fade-in visible">
+                    <h3>House Price Prediction</h3>
+                    <p>Predicts real estate prices based on historical data using regression algorithms like Linear Regression and XGBoost.</p>
+                    <a href="https://github.com/SoftServeHub/house-price-prediction" class="project-link" target="_blank">View Project →</a>
+                </div>
+
+                <div class="project-card fade-in visible">
+                    <h3>Graviti Chain Pvt Ltd Project</h3>
+                    <p>A data science project created for Graviti Chain Pvt Ltd, potentially focusing on blockchain analytics or fintech metrics with Python and ML.</p>
+                    <a href="https://github.com/SoftServeHub/graviti-chain-pvt-ltd-project" class="project-link" target="_blank">View Project →</a>
+                </div>
+
+                <div class="project-card fade-in visible">
+                    <h3>Stock Price Prediction</h3>
+                    <p>Uses LSTM neural networks to forecast stock prices based on historical stock market data.</p>
+                    <a href="https://github.com/SoftServeHub/stock-price-prediction-" class="project-link" target="_blank">View Project →</a>
+                </div>
+
+                <div class="project-card fade-in visible">
+                    <h3>Cyber Security</h3>
+                    <p>Implements basic to intermediate cybersecurity tools or simulations—possibly includes network scanning, threat modeling, or password hashing.</p>
+                    <a href="https://github.com/SoftServeHub/Cyber-Security-" class="project-link" target="_blank">View Project →</a>
+                </div>
+
+                <div class="project-card fade-in visible">
+                    <h3>E-Commerce Application (MERN Stack)</h3>
+                    <p>A full-stack e-commerce platform built with MongoDB, Express.js, React.js, and Node.js. Includes user auth, product management, and checkout features.</p>
+                    <a href="https://github.com/SoftServeHub/E-Commerce-apllication-MERN-stack-" class="project-link" target="_blank">View Project →</a>
+                </div>
+
+                <div class="project-card fade-in visible">
+                    <h3>BookStore Project</h3>
+                    <p>Web application to manage a digital bookstore—features include search, cart, admin dashboard, and purchase tracking using JavaScript frameworks.</p>
+                    <a href="https://github.com/SoftServeHub/BookStore-project" class="project-link" target="_blank">View Project →</a>
+                </div>
+
+                <div class="project-card fade-in visible">
+                    <h3>Google Pay TWIN AI Fintech Simulation</h3>
+                    <p>Simulates a fintech environment inspired by Google Pay, integrating AI for transaction scoring, fraud detection, and digital wallet simulation.</p>
+                    <a href="https://github.com/SoftServeHub/C-Users-HP-Downloads--Google-Pay-TWIN-A-Fully-Integrated-AI-Powered-Fintech-Simulation-Platform" class="project-link" target="_blank">View Project →</a>
+                </div>
+
+                <div class="project-card fade-in visible">
+                    <h3>Financial Advisor Project</h3>
+                    <p>Intelligent assistant for financial planning and investment advice using predictive analytics and budget optimization.</p>
+                    <a href="https://github.com/SoftServeHub/FINACIAL-ADVISOR-PROJECT" class="project-link" target="_blank">View Project →</a>
+                </div>
+
+                <div class="project-card fade-in visible">
+                    <h3>Fake News Detection using LSTM</h3>
+                    <p>A deep learning model using LSTM to classify and detect fake news articles based on their text content.</p>
+                    <a href="https://github.com/SoftServeHub/FAKE-NEWS-DETECTION-USING-LSTM" class="project-link" target="_blank">View Project →</a>
+                </div>
+
+                <div class="project-card fade-in visible">
+                    <h3>ARTIFITS</h3>
+                    <p>AI-generated art project likely combining computer vision and GANs to create or evaluate artistic content.</p>
+                    <a href="https://github.com/SoftServeHub/ARTIFITS" class="project-link" target="_blank">View Project →</a>
+                </div>
+
+                <div class="project-card fade-in visible">
+                    <h3>NUTRIC-AI</h3>
+                    <p>A nutrition-focused AI assistant to recommend healthy meals, track calories, or analyze dietary habits using ML algorithms.</p>
+                    <a href="https://github.com/SoftServeHub/NUTRIC-AI" class="project-link" target="_blank">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Ready to Transform Your Business?</h2>
+            <p>Contact us today to discuss your project requirements and discover how we can help you achieve your goals.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+919025749480" class="contact-link">
+                        <span>+91 90257 49480</span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:infosoftservehub@gmail.com" class="contact-link">
+                        <span>infosoftservehub@gmail.com</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 SoftServe Hub. All rights reserved. | Innovate. Integrate. Inspire.</p>
+        </div>
+    </footer>
+
+    
+
+</body></html>
